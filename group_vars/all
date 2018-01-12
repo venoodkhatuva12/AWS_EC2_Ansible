@@ -1,0 +1,16 @@
+# Ec2 instance variable
+
+  ec2:
+    region: us-east-1
+    crendentials: Ubuntu-AnsibleHost
+    image: ami-da05a4a0
+    sg: default
+    instance_type: t2.micro
+    subnet: subnet-363ca90a 
+    public_ip: yes
+    tags:
+      Name: Ec2AnsibleTest
+    volumes: 
+         device_name: /dev/xvda
+         volume_type: standard
+         volume_size: 8
